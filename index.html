@@ -64,7 +64,11 @@ timer = setInterval(draw, 5);
   
 });
   
-  
+  window.addEventListener('devicemotion', function(event) {
+
+     $("#xaccel").html(Math.round(event.acceleration.x));
+
+});
   
   
   timer = setInterval(draw, 5);
